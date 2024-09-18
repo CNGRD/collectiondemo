@@ -1,0 +1,10 @@
+package com.learning_Locators;
+
+public class Practice_Id_Locator1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

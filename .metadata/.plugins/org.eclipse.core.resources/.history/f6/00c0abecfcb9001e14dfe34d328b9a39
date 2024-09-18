@@ -1,0 +1,12 @@
+package basic_programs;
+
+class dinga 
+{
+	public static void main(String[] args) 
+	{
+		int i=19;
+		long j=i;
+		System.out.println(j);
+		
+	}
+}

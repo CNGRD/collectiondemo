@@ -1,0 +1,10 @@
+package com.learning_Locators;
+
+public class Learning_Absolute_path {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

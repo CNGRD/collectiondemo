@@ -1,0 +1,22 @@
+package com.learning_Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Learning_cssSelector {
+
+	public static void main(String[] args) throws InterruptedException
+	{
+		ChromeDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://laptop-fd4nvgge/login.do");
+		
+		Thread.sleep(2000);
+		
+		driver.findElement(By.cssSelector("[type='text']")).sendKeys("admin");
+		driver.findElement(By.cssSelector("input[type='password']")).sendKeys("manager");
+		driver.findElement(By.cssSelector("[onclick='login(document.forms[0]); return false;']")).click();
+		
+	}
+
+}

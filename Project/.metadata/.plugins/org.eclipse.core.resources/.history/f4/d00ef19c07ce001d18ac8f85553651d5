@@ -1,0 +1,22 @@
+package methods;
+
+class Sample1 
+{
+	public static int num;
+	public static char ch;
+	public static boolean b;
+	public static double d;
+	
+	public static void add()
+	{
+		System.out.println(num);
+		System.out.println(ch);
+		System.out.println(b);
+		System.out.println(d);
+	}
+	public static void main(String[] args) 
+	{
+		add();
+	}
+
+}

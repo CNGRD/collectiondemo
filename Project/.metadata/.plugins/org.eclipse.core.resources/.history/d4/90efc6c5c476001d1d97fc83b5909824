@@ -1,0 +1,68 @@
+package has_a_relation;
+import java.util.Scanner;
+class Dish
+{
+	private String dName;
+	private double price;
+	public int length;
+	//getter
+	String getDname()
+	{
+		return dName;
+	}
+	double getPrice()
+	{
+		return price;
+	}
+	//setters
+	void setDname(String dName)
+	{
+		this.dName=dName;
+	}
+	void setPrice(double price)
+	{
+		this.price=price;
+	}
+	//CONSTRUCTORS
+	Dish()
+	{
+		
+	}
+	Dish(String dName)
+	{
+		setDname(dName);
+	}
+	Dish(double price)
+	{
+		setPrice(price);
+	}
+	
+}
+class MenuApp {
+
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		int ch;
+		Menu m=new Menu();
+		do
+		{
+			System.out.println("***WELCOME TO MENU APP***");
+			System.out.println("Enter 1 to Add Dish:");
+			System.out.println("Enter 2 to search Dish:");
+			System.out.println("Enter 3 to Get Dish:");
+			System.out.println("Enter 4 for Exit:");
+			ch=s.nextInt();
+			switch(ch)
+			{
+				case 1:System.out.println("Enter the Dish Name:");
+						System.out.println("Enter the Price of Dish");
+				case 2:
+				case 3:
+			}
+		
+		}while(ch!=4);
+		System.out.println("Thank You ,Visit Again");
+	}
+
+}

@@ -1,0 +1,10 @@
+package practice_data_driven_testing;
+
+public class ReadDataFromExcelTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

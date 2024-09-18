@@ -1,0 +1,16 @@
+package basic_programs;
+
+ class Learning_Local_var
+{
+	 public static void main(String[] args) 
+	{
+		 int i=10;
+		 System.out.println(i);
+		
+	}
+	 public static void ankit()
+	 {
+		 System.out.println(i);
+	 }
+
+}

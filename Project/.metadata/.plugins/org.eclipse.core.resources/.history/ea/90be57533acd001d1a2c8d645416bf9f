@@ -1,0 +1,17 @@
+package methods;
+
+public class  Demo1
+{
+	public void learn()
+	{
+		System.out.println("learn to live");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts");
+		Demo1 d=new Demo1();
+		d.learn();
+		System.out.println("main ends");
+	}
+
+}

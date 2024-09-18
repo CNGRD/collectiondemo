@@ -1,0 +1,39 @@
+package practice_data_driven_testing;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+public class Read_Multiple_data_From_Excel {
+
+	public static void main(String[] args) throws Exception, IOException 
+	{
+		FileInputStream fis=new FileInputStream("C:\\Users\\Nithin\\OneDrive\\Desktop\\testscriptdata.xlsx");
+		
+		Workbook wb=WorkbookFactory.create(fis);
+		Sheet sh=wb.getSheet("sheet1");
+		/*
+		 * Row row=sh.getRow(1); String col1=row.getCell(0).toString(); String
+		 * col2=row.getCell(1).toString(); System.out.println(col1+" "+col2);
+		 * //System.out.println(col2); wb.close();
+		 */
+		
+		//use for loop to all the data from sheet1
+		
+		for(int i=1;i<=16;i++)
+		{
+			Row row=sh.getRow(i);
+			String col1=row.getCell(0).toString();
+			String col2=row.getCell(1).toString(); System.out.println(col1+" "+col2);
+		}
+		int rowcount=sh.getLastRowNum();
+		System.out.println(rowcount);
+		wb.close();
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package methods;
+
+class Gym 
+{
+	
+
+	public static void walk()
+	{
+		System.out.println("Every day walk 5km");
+	}
+
+}

@@ -1,0 +1,20 @@
+package pac1;
+/**
+ * 
+ * @author Nithin
+ *
+ */
+
+public class Opertors {
+
+	public static void main(String[] args) 
+	{
+		int i=10;
+		int j=5;
+		
+		//unary operator
+		System.out.println(i!=j);
+
+	}
+
+}

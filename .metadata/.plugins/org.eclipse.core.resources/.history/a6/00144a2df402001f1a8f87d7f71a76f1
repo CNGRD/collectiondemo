@@ -1,0 +1,22 @@
+package com.learning_Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Learning_Absolute_path {
+
+	public static void main(String[] args) throws InterruptedException {
+		ChromeDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("");
+		 
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("admin");
+		driver.findElement(By.xpath("(//input[@class='textField'])[2]")).sendKeys("manager");
+		driver.findElement(By.xpath("//a[@id='loginButton']")).click();
+		
+	}
+
+}

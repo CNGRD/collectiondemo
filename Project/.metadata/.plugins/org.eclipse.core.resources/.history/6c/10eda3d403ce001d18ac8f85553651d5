@@ -1,0 +1,12 @@
+package methods;
+
+public class Sample3 
+{
+	public static int num=10;
+	public static void main(String[] args) 
+	{
+		num=num+10;
+		System.out.println(num);
+	}
+
+}

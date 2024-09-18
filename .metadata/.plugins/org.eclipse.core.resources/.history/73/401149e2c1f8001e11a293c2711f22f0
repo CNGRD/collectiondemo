@@ -1,0 +1,28 @@
+package com.learning_Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Learning_Id_Method {
+
+	public static void main(String[] args) {
+
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://demowebshop.tricentis.com/");
+
+//		By emailLocator = By.id("newsletter-email");
+//		WebElement emailTextField = driver.findElement(emailLocator);
+//		emailTextField.sendKeys("raj@123.gmail.com");
+		
+		driver.findElement(By.id("newsletter-email")).sendKeys("raj@gmail.com");
+		
+		By subscribeLocator=By.id("newsletter-subscribe-button");
+		WebElement subscribeButton=driver.findElement(subscribeLocator);
+		subscribeButton.click();
+		
+
+	}
+
+}

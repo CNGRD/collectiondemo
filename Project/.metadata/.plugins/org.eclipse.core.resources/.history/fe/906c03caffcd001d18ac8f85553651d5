@@ -1,0 +1,22 @@
+package methods;
+
+public class Sample 
+{
+	public static void add()
+	{
+		int a=10;
+		int b=20;
+		int res=a+b;
+		System.out.println(res);
+	}
+
+	public static void main(String[] args)
+	{
+		System.out.println("main starts");
+		add();
+		int sum;
+		System.out.println("main ends");
+
+	}
+
+}

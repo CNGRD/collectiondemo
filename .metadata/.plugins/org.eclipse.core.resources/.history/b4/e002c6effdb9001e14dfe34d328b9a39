@@ -1,0 +1,13 @@
+package basic_programs;
+
+ class Learning_Local_var
+{
+	 //static int i;
+	 public static void main(String[] args) 
+	{
+		 int i;
+		 System.out.println(i);
+		
+	}
+
+}

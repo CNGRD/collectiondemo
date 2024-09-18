@@ -1,0 +1,28 @@
+package com.learning_Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Learning_Xpath_By_Visible_text {
+
+	public static void main(String[] args) throws InterruptedException {
+	
+		ChromeDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://demowebshop.tricentis.com/");
+		
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Shopping cart']")).click();
+		String text=driver.findElement(By.xpath("//h1[text()='Shopping cart']")).getText();
+		System.out.println(text);
+		if(text.equals("Shopping cart"))
+		{
+			System.out.println("Cart page displayed");
+		}
+		else
+		{
+			System.out.println("Cart page not displayed");
+		}
+	}
+
+}

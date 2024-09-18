@@ -1,0 +1,22 @@
+package com.learning_Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Learning_Xpath_By_text_Contains {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		ChromeDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("http://laptop-fd4nvgge/login.do");
+		driver.findElement(By.xpath("a[contains(text(),'License for using this software')]")).click();
+		Thread.sleep(2000);
+		
+		driver.close();
+
+
+	}
+
+}

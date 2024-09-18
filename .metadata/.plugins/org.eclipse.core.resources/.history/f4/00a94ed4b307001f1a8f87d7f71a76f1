@@ -1,0 +1,23 @@
+package com.learning_Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Practice_Id_selector {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		ChromeDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://demowebshop.tricentis.com/register");
+		
+		Thread.sleep(2000);
+		
+		driver.findElement(By.id("gender-male")).click();
+		driver.findElement(By.id("FirstName")).sendKeys("Poojith");
+		driver.findElement(By.id("LastName")).sendKeys("Nithin");
+		driver.findElement(By.name("Email")).sendKeys("poojan@gmail.com");
+		driver.findElement(By.name("register-button")).click();
+	}
+
+}

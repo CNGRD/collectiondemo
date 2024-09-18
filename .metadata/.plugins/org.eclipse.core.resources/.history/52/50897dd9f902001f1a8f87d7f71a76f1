@@ -1,0 +1,10 @@
+package com.learning_Locators;
+
+public class Learning_Xpath_By_Visible_text {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
